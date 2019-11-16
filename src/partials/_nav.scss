@@ -1,0 +1,53 @@
+$color-nav-text: rgba(155, 125, 8, 255);
+
+nav {
+  display: flex;
+  width: 453px;
+  height: 41px;
+  margin-top: 45px;
+}
+
+.header_navlist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0px 10px 0px 55px;
+  margin: 0px;
+
+  background-color: #f5c506;
+  box-shadow: -4px -5px 1px 3px #a48d19, -8px -8px 1px 3px #806f24;
+
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    list-style-type: none;
+    border-right: $color-nav-text 1px solid;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: SegoeWP, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 17px;
+    color: $color-nav-text;
+
+    &:hover {
+      color: white;
+      cursor: pointer;
+    }
+
+    &::before {
+      content: "12";
+      margin-right: 10px;
+    }
+  }
+}
