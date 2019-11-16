@@ -1,4 +1,4 @@
-$color: #cba60e;
+$color-scroll-button: #ec9e03;
 
 * {
   box-sizing: border-box;
@@ -51,6 +51,7 @@ body {
   h1 {
   display: inline-block;
   margin: 0px;
+
   vertical-align: 50%;
   text-transform: uppercase;
   color: white;
@@ -101,7 +102,7 @@ nav {
     text-decoration: none;
     text-transform: uppercase;
     font-family: SegoeWP, AdobeInvisFont, MyriadPro-Regular;
-    font-size: 17.04912px;
+    font-size: 17px;
     color: rgba(155, 125, 8, 255);
 
     &:hover {
@@ -276,7 +277,7 @@ nav {
     position: relative;
     left: 90%;
   
-    background: #ec9e03;
+    background: $color-scroll-button;
     border: 0px;
     color: white;
   }
@@ -288,7 +289,7 @@ nav {
   font-family: SegoeWP-Light, AdobeInvisFont, MyriadPro-Regular;
   font-size: 29px;
 
-  background: #ec9e03;
+  background: $color-scroll-button;
 
   p {
     margin: 0px;
@@ -320,7 +321,7 @@ nav {
   &::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background: #ec9e03;
+    background: $color-scroll-button;
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
   }
 }
@@ -332,7 +333,7 @@ nav {
 .scroll__twiter {
   font-size: 25px;
 
-  background: #ec9e03;
+  background: $color-scroll-button;
 }
 
 .scroll__twiter-image {
@@ -415,6 +416,7 @@ nav {
   position: relative;
   right: 5px;
   bottom: 40px;
+  
   width: 116px;
   height: 116px;
   z-index: 2;
