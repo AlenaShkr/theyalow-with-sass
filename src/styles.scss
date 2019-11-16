@@ -1,4 +1,5 @@
 $color-scroll-button: #ec9e03;
+$color-nav-text: rgba(155, 125, 8, 255);
 
 * {
   box-sizing: border-box;
@@ -77,8 +78,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding-left: 55px;
-  padding-right: 10px;
+  padding: 0px 10px 0px 55px;
   margin: 0px;
 
   background-color: #f5c506;
@@ -91,7 +91,7 @@ nav {
     width: 30%;
     height: 100%;
     list-style-type: none;
-    border-right: rgba(155, 125, 8, 255) 1px solid;
+    border-right: $color-nav-text 1px solid;
   }
 
   li:last-child {
@@ -103,7 +103,7 @@ nav {
     text-transform: uppercase;
     font-family: SegoeWP, AdobeInvisFont, MyriadPro-Regular;
     font-size: 17px;
-    color: rgba(155, 125, 8, 255);
+    color: $color-nav-text;
 
     &:hover {
       color: white;
@@ -169,8 +169,7 @@ nav {
   &:hover {
     background: #f7c80d;
     cursor: pointer;
-  }
-  
+  } 
 }
 
 .slider__video {
@@ -203,8 +202,7 @@ nav {
       justify-content: center;
       align-items: center;
     
-      padding-top: 40px;
-      padding-bottom: 33px;
+      padding: 40px 0px 33px;
     
       font-family: SegoeUI-Light, AdobeInvisFont, MyriadPro-Regular;
       font-size: 27px;
@@ -226,8 +224,7 @@ nav {
   content: "";
   width: 109px;
   height: 74px;
-  margin-bottom: 12px;
-  margin-top: 20px;
+  margin: 20px 0px 12px;
 
   background: url(https://raw.githubusercontent.com/AlenaShkr/theyalow/master/assets/main/benefit/cloud.png);
 }
@@ -236,8 +233,7 @@ nav {
   content: "";
   width: 91px;
   height: 95px;
-  margin-bottom: 15px;
-  margin-left: 15px;
+  margin: 0px 0px 15px 15px;
 
   background: url(https://raw.githubusercontent.com/AlenaShkr/theyalow/master/assets/main/benefit/list.png);
 }
@@ -246,9 +242,7 @@ nav {
   content: "";
   width: 81px;
   height: 80px;
-  margin-top: 10px;
-  margin-bottom: 18px;
-  margin-right: 20px;
+  margin: 10px 20px 18px;
 
   background: url(https://raw.githubusercontent.com/AlenaShkr/theyalow/master/assets/main/benefit/paperplane.png);
 }
@@ -265,8 +259,7 @@ nav {
 
   h2 {
     margin: 0px;
-    padding-top: 35px;
-    padding-bottom: 30px;
+    padding: 35px 0px 30px;
   
     font-family: PTSans-Regular, AdobeInvisFont, MyriadPro-Regular;
     font-size: 37px;
@@ -390,9 +383,7 @@ nav {
 }
 
 .services__caption {
-  padding-top: 40px;
-  padding-bottom: 50px;
-  padding-left: 90px;
+  padding: 40px 0px 50px 90px;
   margin: 0px;
 
   font-family: PTSans-Regular, AdobeInvisFont, MyriadPro-Regular;
@@ -416,7 +407,7 @@ nav {
   position: relative;
   right: 5px;
   bottom: 40px;
-  
+
   width: 116px;
   height: 116px;
   z-index: 2;
@@ -457,8 +448,7 @@ nav {
   line-height: 1.2;
 
   li {
-    margin-bottom: 25px;
-    margin-left: 25px;
+    margin: 0px 0px 25px 25px;
     padding-left: 10px;
   }
 }
@@ -478,9 +468,7 @@ nav {
 
   img {
     height: 51px;
-    margin-right: 9px;
-    margin-left: 2px;
-    margin-top: 5px;
+    margin: 5px 9px 0px 2px;
   }
 
   h1 {
