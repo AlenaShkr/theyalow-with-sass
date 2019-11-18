@@ -5,6 +5,8 @@
   align-items: $align;
   justify-content: $justify;
 }
+$mobile: 375px;
+$tablet: 800px;
 
 $color-scroll-button: #ec9e03;
 
@@ -45,6 +47,9 @@ body {
 
   .wrapper {
     @include flex();
+    @media only screen and (max-width: $tablet){
+      flex-direction: column;
+    }
   }
 }
 
@@ -80,11 +85,12 @@ body {
   @include flex();
 
   padding-top: 53px;
-}
+  
 
-.slider__slogan {
+  .slider__slogan {
   @include flex($justify: center);
   flex-direction: column;
+  }
 
   font-family: Asap-Regular, AdobeInvisFont, MyriadPro-Regular;
   font-size: 63px;
@@ -125,6 +131,11 @@ body {
 
 .slider__video {
   padding-left: 8px;
+
+  & video {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .benefit {
@@ -421,3 +432,5 @@ body {
   }
 
 }
+
+
