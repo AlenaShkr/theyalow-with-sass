@@ -83,7 +83,7 @@ body {
 }
 
 .slider__slogan {
-  @include flex(center, center);
+  @include flex($justify: center);
   flex-direction: column;
 
   font-family: Asap-Regular, AdobeInvisFont, MyriadPro-Regular;
@@ -148,7 +148,7 @@ body {
     padding-left: 0px;
 
     & * {
-      @include flex(center, center);
+      @include flex($justify: center);
       flex-direction: column;
     
       padding: 40px 0px 33px;
@@ -407,7 +407,7 @@ body {
 }
 
 .footer__logo {
-  @include flex(center, flex-start);
+  @include flex($justify: flex-start);
 
   img {
     height: 51px;
