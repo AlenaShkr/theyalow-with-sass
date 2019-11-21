@@ -5,6 +5,7 @@
   align-items: $align;
   justify-content: $justify;
 }
+
 $mobile: 375px;
 $tablet: 800px;
 
@@ -31,6 +32,10 @@ body {
   }
   padding-top: 28px;
 
+  @media only screen and (min-width: $mobile){
+    padding-top: 0px;
+  }
+
   background: linear-gradient(
       45deg,
       rgba(0, 0, 0, 0) 48%,
@@ -50,8 +55,8 @@ body {
 
   .wrapper {
     @include flex();
-    @media only screen and (max-width: $tablet){
-      flex-direction: column;
+    @media only screen and (min-width: $mobile){
+      @include flex(flex-start, stretch);
     }
   }
 }
@@ -63,6 +68,10 @@ body {
 }
 
 .logo {
+  @media only screen and (min-width: $mobile) {
+    background: black;
+  }
+  
   h1 {
   display: inline-block;
   margin: 0px;
@@ -72,10 +81,16 @@ body {
   color: white;
   font-family: LucidaSans-Italic, AdobeInvisFont, MyriadPro-Regular;
   font-size: 42px;
+  @media only screen and (min-width: $mobile) {
+    font-size: 22px;
+  }
   }
 
   img {
     padding-right: 9px;
+    @media only screen and (min-width: $mobile) {
+      width: 30%;
+    }
   }
 }
 
@@ -88,23 +103,19 @@ body {
   @include flex();
 
   padding-top: 53px;
-  order: 3;
-
-  .wrapper {
-    @media only screen and (max-width: $tablet){
-      order: 2;
+  @media only screen and (min-width: $mobile){
+    padding-top: 0px;
     }
   }
 
   .slider__slogan {
   @include flex($justify: center);
   flex-direction: column;
-  order: 2;
-  @media only screen and (max-width: $tablet){
-    order: 1;
-  }
-  }
 
+  @media only screen and (min-width: $mobile){
+    display: none;
+    }
+  
   font-family: Asap-Regular, AdobeInvisFont, MyriadPro-Regular;
   font-size: 63px;
   color: rgba(245, 197, 6, 255);
@@ -140,23 +151,19 @@ body {
     background: #f7c80d;
     cursor: pointer;
   } 
-}
 
-.slider__button-prev {
-  order: 0;
+  @media only screen and (min-width: $mobile){
+    display: none;
+    }
 }
-
-.slider__button-next {
-  order: 3;
-}
-
 
 .slider__video {
   padding-left: 8px;
-  order: 1;
-  @media only screen and (max-width: $tablet){
-    order: 2;
-  }
+
+  @media only screen and (min-width: $mobile){
+    padding-left: 0px;
+    height: 100%;
+    }
 
   & video {
     width: 100%;
