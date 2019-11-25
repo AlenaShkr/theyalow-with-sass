@@ -1,0 +1,466 @@
+nav {
+  display: flex;
+  width: 453px;
+  height: 41px;
+  margin-top: 45px;
+}
+@media only screen and (min-width: 375px) {
+  nav {
+    margin-top: 0px;
+  }
+}
+
+.header_navlist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0px 10px 0px 55px;
+  margin: 0px;
+  background-color: #f5c506;
+  box-shadow: -4px -5px 1px 3px #a48d19, -8px -8px 1px 3px #806f24;
+}
+@media only screen and (min-width: 375px) {
+  .header_navlist {
+    box-shadow: none;
+  }
+}
+.header_navlist li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  list-style-type: none;
+  border-right: #9b7d08 1px solid;
+}
+.header_navlist li:last-child {
+  border-right: none;
+}
+.header_navlist a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: SegoeWP, AdobeInvisFont, MyriadPro-Regular;
+  font-size: 17px;
+  color: #9b7d08;
+}
+.header_navlist a:hover {
+  color: white;
+  cursor: pointer;
+}
+.header_navlist a::before {
+  content: "12";
+  margin-right: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100%;
+}
+
+@font-face {
+  font-family: Lato-Bold;
+  src: url("./assets/fonts/lato/Lato-Bold.woff2");
+}
+.header {
+  height: 566px;
+  padding-top: 28px;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0) 52%), linear-gradient(-45deg, rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0) 52%), url("https://raw.githubusercontent.com/AlenaShkr/theyalow/master/assets/header/bgHeader.jpeg") center;
+  background-repeat: repeat, repeat, no-repeat;
+  background-size: 1em 1em, 1em 1em, cover;
+}
+@media only screen and (max-width: 800px) {
+  .header {
+    height: calc(566px + 30%);
+  }
+}
+@media only screen and (max-width: 375px) {
+  .header {
+    padding-top: 0px;
+  }
+}
+.header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 375px) {
+  .header .wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: stretch;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 375px) {
+  .logo {
+    background: black;
+  }
+}
+.logo h1 {
+  display: inline-block;
+  margin: 0px;
+  vertical-align: 50%;
+  text-transform: uppercase;
+  color: white;
+  font-family: LucidaSans-Italic, AdobeInvisFont, MyriadPro-Regular;
+  font-size: 42px;
+}
+@media only screen and (max-width: 375px) {
+  .logo h1 {
+    font-size: 22px;
+  }
+}
+.logo img {
+  padding-right: 9px;
+}
+@media only screen and (max-width: 375px) {
+  .logo img {
+    width: 30%;
+  }
+}
+
+.main {
+  min-height: calc(100vh-544px-84px);
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 53px;
+}
+@media only screen and (max-width: 375px) {
+  .slider {
+    padding-top: 0px;
+  }
+}
+
+.slider__slogan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: Asap-Regular, AdobeInvisFont, MyriadPro-Regular;
+  font-size: 63px;
+  color: #f5c506;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 375px) {
+  .slider__slogan {
+    display: none;
+  }
+}
+.slider__slogan p {
+  margin: -15px 13px 18px 0px;
+}
+.slider__slogan p:last-child {
+  color: whitesmoke;
+}
+.slider__slogan button {
+  margin-bottom: 15px;
+}
+
+.slider__button-prev,
+.slider__button-next {
+  width: 32px;
+  height: 57px;
+  background: #cba60e;
+  color: whitesmoke;
+  border: none;
+  font-size: 38px;
+  font-weight: bold;
+}
+.slider__button-prev:hover,
+.slider__button-next:hover {
+  background: #f7c80d;
+  cursor: pointer;
+}
+@media only screen and (max-width: 375px) {
+  .slider__button-prev,
+.slider__button-next {
+    display: none;
+  }
+}
+
+.slider__video {
+  padding-left: 8px;
+}
+@media only screen and (max-width: 375px) {
+  .slider__video {
+    padding-left: 0px;
+    height: 100%;
+  }
+}
+.slider__video video {
+  width: 100%;
+  height: 100%;
+}
+
+.benefit {
+  background: linear-gradient(45deg, rgba(117, 116, 116, 0) 48%, rgba(218, 213, 213, 0.4) 50%, rgba(117, 116, 116, 0) 52%);
+  background-repeat: repeat;
+  background-size: 0.5em 0.5em;
+  box-shadow: 0px 3px 4px 7px rgba(71, 71, 70, 0.74);
+}
+.benefit .wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row: 1 fr;
+  width: 100%;
+  height: 100%;
+  padding-left: 0px;
+}
+.benefit .wrapper * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 0px 33px;
+  font-family: SegoeUI-Light, AdobeInvisFont, MyriadPro-Regular;
+  font-size: 27px;
+  color: black;
+  text-transform: uppercase;
+  border-right: #d4d4d4 1px solid;
+  list-style-type: none;
+}
+.benefit .wrapper :first-child {
+  border-left: #d4d4d4 1px solid;
+}
+
+.benefit__li_first:before {
+  content: "";
+  width: 109px;
+  height: 74px;
+  margin: 20px 0px 12px;
+  background: url(https://raw.githubusercontent.com/AlenaShkr/theyalow/master/assets/main/benefit/cloud.png);
+}
+
+.benefit__li_second:before {
+  content: "";
+  width: 91px;
+  height: 95px;
+  margin: 0px 0px 15px 15px;
+  background: url(https://raw.githubusercontent.com/AlenaShkr/theyalow/master/assets/main/benefit/list.png);
+}
+
+.benefit__li_third:before {
+  content: "";
+  width: 81px;
+  height: 80px;
+  margin: 10px 20px 18px;
+  background: url(https://raw.githubusercontent.com/AlenaShkr/theyalow/master/assets/main/benefit/paperplane.png);
+}
+
+.scroll {
+  padding-bottom: 20px;
+  color: white;
+  text-align: left;
+  background: url("https://raw.githubusercontent.com/AlenaShkr/theyalow/master/assets/main/scroll/bgscroll.jpeg") repeat;
+  box-shadow: inset 0px 9px 16px -4px rgba(71, 71, 70, 0.74);
+}
+.scroll h2 {
+  margin: 0px;
+  padding: 35px 0px 30px;
+  font-family: PTSans-Regular, AdobeInvisFont, MyriadPro-Regular;
+  font-size: 37px;
+  text-transform: uppercase;
+}
+.scroll button {
+  position: relative;
+  left: 90%;
+  background: #ec9e03;
+  border: 0px;
+  color: white;
+}
+
+.scroll__description {
+  width: 341px;
+  font-family: SegoeWP-Light, AdobeInvisFont, MyriadPro-Regular;
+  font-size: 29px;
+  background: #ec9e03;
+}
+.scroll__description p {
+  margin: 0px;
+  padding: 31px 25px 0px 34px;
+}
+
+.scroll__main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow-x: scroll;
+}
+.scroll__main::-webkit-scrollbar {
+  width: 10px;
+}
+.scroll__main::-webkit-scrollbar-track {
+  background: whitesmoke;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+.scroll__main::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #ec9e03;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.scroll__video {
+  display: flex;
+}
+
+.scroll__twiter {
+  font-size: 25px;
+  background: #ec9e03;
+}
+
+.scroll__twiter-image {
+  display: block;
+  width: 163px;
+  height: 133px;
+  margin: 35px 83px 5px 83px;
+}
+
+.scroll__twiter-count {
+  position: relative;
+  left: 86%;
+  top: 0.5em;
+  margin: 0px;
+  font-family: SegoeWP-Light, AdobeInvisFont, MyriadPro-Regular;
+  font-size: 25px;
+}
+
+.scroll__calendar {
+  align-self: flex-start;
+  margin-right: 100%;
+  margin-bottom: 43px;
+  background: #ddb101;
+  font-size: 51px;
+  color: white;
+}
+
+.scroll__calendar-day {
+  margin: 5px 27px 0px 31px;
+}
+
+.scroll__calendar-month {
+  margin: 0px;
+  font-size: 21px;
+  color: #b26529;
+  text-align: center;
+}
+
+.scroll___button_plus:hover {
+  color: orangered;
+}
+
+.services {
+  background: url("https://raw.githubusercontent.com/AlenaShkr/theyalow/master/assets/main/services/bgservices.jpeg") repeat;
+}
+.services .wrapper {
+  min-height: 496px;
+}
+
+.services__caption {
+  padding: 40px 0px 50px 90px;
+  margin: 0px;
+  font-family: PTSans-Regular, AdobeInvisFont, MyriadPro-Regular;
+  font-size: 43px;
+  color: #f5c506;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.services__image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-left: 15px;
+  position: relative;
+  bottom: 115px;
+}
+
+.services__image_stamp {
+  position: relative;
+  right: 5px;
+  bottom: 40px;
+  width: 116px;
+  height: 116px;
+  z-index: 2;
+  background: #f5c506;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.services__image_stamp p {
+  margin: 0px 0px 0px 5px;
+  padding-top: 40%;
+  font-family: PTSans-NarrowBold, AdobeInvisFont, MyriadPro-Regular;
+  font-size: 16px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.services__image_device {
+  width: 540px;
+  height: 255px;
+}
+
+.services__list {
+  margin-top: 45px;
+  padding-left: 80px;
+  font-family: OpenSans, AdobeInvisFont, MyriadPro-Regular;
+  font-size: 22px;
+  color: #a9a9a7;
+  text-align: left;
+  list-style-type: none;
+  list-style-image: url("https://raw.githubusercontent.com/AlenaShkr/theyalow/master/assets/main/services/listmarker.png");
+  line-height: 1.2;
+}
+.services__list li {
+  margin: 0px 0px 25px 25px;
+  padding-left: 10px;
+}
+
+.footer {
+  height: 64px;
+  background: #4c4c4c;
+  box-shadow: 0px 3px 4px 7px rgba(22, 22, 22, 0.74);
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.footer__logo img {
+  height: 51px;
+  margin: 5px 9px 0px 2px;
+}
+.footer__logo h1 {
+  margin-bottom: 5px;
+  color: white;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=styles.css.map */

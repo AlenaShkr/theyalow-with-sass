@@ -32,7 +32,7 @@ body {
   }
   padding-top: 28px;
 
-  @media only screen and (min-width: $mobile){
+  @media only screen and (max-width: $mobile){
     padding-top: 0px;
   }
 
@@ -55,7 +55,7 @@ body {
 
   .wrapper {
     @include flex();
-    @media only screen and (min-width: $mobile){
+    @media only screen and (max-width: $mobile){
       @include flex(flex-start, stretch);
     }
   }
@@ -68,7 +68,7 @@ body {
 }
 
 .logo {
-  @media only screen and (min-width: $mobile) {
+  @media only screen and (max-width: $mobile) {
     background: black;
   }
   
@@ -81,14 +81,14 @@ body {
   color: white;
   font-family: LucidaSans-Italic, AdobeInvisFont, MyriadPro-Regular;
   font-size: 42px;
-  @media only screen and (min-width: $mobile) {
+  @media only screen and (max-width: $mobile) {
     font-size: 22px;
   }
   }
 
   img {
     padding-right: 9px;
-    @media only screen and (min-width: $mobile) {
+    @media only screen and (max-width: $mobile) {
       width: 30%;
     }
   }
@@ -103,7 +103,7 @@ body {
   @include flex();
 
   padding-top: 53px;
-  @media only screen and (min-width: $mobile){
+  @media only screen and (max-width: $mobile){
     padding-top: 0px;
     }
   }
@@ -112,7 +112,7 @@ body {
   @include flex($justify: center);
   flex-direction: column;
 
-  @media only screen and (min-width: $mobile){
+  @media only screen and (max-width: $mobile){
     display: none;
     }
   
@@ -152,7 +152,7 @@ body {
     cursor: pointer;
   } 
 
-  @media only screen and (min-width: $mobile){
+  @media only screen and (max-width: $mobile){
     display: none;
     }
 }
@@ -160,7 +160,7 @@ body {
 .slider__video {
   padding-left: 8px;
 
-  @media only screen and (min-width: $mobile){
+  @media only screen and (max-width: $mobile){
     padding-left: 0px;
     height: 100%;
     }
